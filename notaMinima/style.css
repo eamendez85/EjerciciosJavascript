@@ -14,7 +14,7 @@ body{
 #contenedor{
     margin-top: 40px;
     width: 700px;
-    height: 540px;
+    height: 359px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -41,4 +41,27 @@ label{
 
 p{
     margin: 10px 0 10px 0;
+}
+
+input{
+    height: 23px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgb(231, 209, 213);
+    outline: none;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 209, 213);
+    background-color: #3399ff;
+    color: white;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #267cd1;
+    cursor: pointer;
 }

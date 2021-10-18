@@ -15,9 +15,9 @@ function calcular(){
     let op=resta/0.4;
 
     if (op>5) {
-        resultado.textContent=`Su promedio es ${suma }. No alcanza a pasar`;
+        resultado.textContent=`Su promedio es ${suma.toFixed(2)}. No alcanza a pasar`;
     }
     else{
-        resultado.textContent=`Su promedio es ${suma }. La nota minima que necesita es: ${op}`;
+        resultado.textContent=`Su promedio es ${suma.toFixed(2) }. La nota minima que necesita es: ${op.toFixed(2)}`;
     }
 }
