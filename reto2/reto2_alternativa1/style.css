@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#main_container{
+    width: 95%;
+    height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+}
+
+#data_container{
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#input{
+    margin: 15px 0 7.5px 0;
+}
+
+#btn{
+    margin-top: 7.5px;
+    width: 90px;
+    height: 30px;
+}
+
+#card_container{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 0px 5px 1px black;
+    margin: auto;
+}
+
+#name_container{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 3px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name_container #name{
+    font-size: 20px;
+}
+
+#card_container #welcome{
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
