@@ -1,3 +1,0 @@
-Material de apoyo
-como se comportan los numeros, haciendo uso de la propiedad math.ramdon
-permite generar numeros aleatorios que se utilizaran para generar los codigos de colores
