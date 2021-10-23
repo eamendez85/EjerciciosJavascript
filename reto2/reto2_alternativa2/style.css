@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#main_container{
+    width: 95%;
+    height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+}
+
+#data_container{
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#input{
+    margin: 15px 0 7.5px 0;
+}
+
+#btn{
+    margin-top: 7.5px;
+    width: 90px;
+    height: 30px;
+}
