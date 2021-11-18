@@ -1,20 +1,19 @@
 const main=document.querySelector("main");
-let limit=15;
 
-const createCard = () => {
+const createCard = (id, title, price_product, img_product) => {
 
     const card = document.createElement("div");
     card.setAttribute("id", "card");
     const img=document.createElement("img");
     img.setAttribute("id", "product_img");
-    img.setAttribute("src", "img/product.png");
+    img.setAttribute("src", img_product);
     img.setAttribute("alt", "Product");
     const product_title = document.createElement("h2");
     product_title.setAttribute("id", "product_title");
-    product_title.textContent="Producto 1";
+    product_title.textContent=title;
     const price=document.createElement("p");
     price.setAttribute("id", "price");
-    price.textContent="$100";
+    price.textContent="$"+price_product;
     const button=document.createElement("button");
     button.setAttribute("id", "btn_add");
     button.textContent="Add to cart";
@@ -28,9 +27,9 @@ const createCard = () => {
 }
 
 function renderCards(){
-    for (let index = 0; index < limit; index++) {
-        createCard();
-    }
+    products.forEach(product => {
+        createCard(product.id, product.title, product.price, product.img);
+    })
 }
 
 renderCards();
