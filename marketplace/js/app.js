@@ -90,7 +90,6 @@ function setCart(object){
         product.quantity=cart[product.id].quantity + 1;
     }
     cart[product.id]={...product};
-    console.log(cart);
     renderItem();
 }
 
