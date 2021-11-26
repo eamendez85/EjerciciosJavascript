@@ -4,16 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marketplace</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <script src="products.js"></script>
-    <script src="app.js"></script>
+    <header>
+        <div id="header-container">
+            <h1>MARKETPLACE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--
+    <div id="icon-cart-container">
+        <a href="cart.html"><img src="icons/shopping_cart_white_24dp.svg" alt="Shooping cart" class="icon-cart" id="btn-cart"></a>
+    </div>
+    -->
+    <main><div id="main"></div></main>
+    <section id="table">
+        <table>
+            <caption>Shopping Cart</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot id="tfoot">
+                <div id="tr-foot">
+                    <td id="title-total">Total price: $ <span id="total-price"></span></td> 
+                    <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
+                    <td><button class="checkout">Checkout</button></td>
+                </div>
+            </tfoot>
+            <template id="template-cart">
+                <tr>
+                    <td id="id-cart"></td>
+                    <td id="img-cart"><img src="" alt=""></td>
+                    <td id="name-cart"></td>
+                    <td>$ <span id="price-cart"></span></td>
+                    <td><input type="number" class="quantity-cart"></td>
+                    <td>$ <span id="total-cart"></span></td>
+                    <td>
+                        <button class="delete">X</button>
+                    </td>
+                </tr>
+            </template>
+        </table>
+    </section>
+    <p id="result"></p>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
