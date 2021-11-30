@@ -8,20 +8,35 @@
     <title>Rick And Morty</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="image/logo.png" alt="logo">
+    </header>
+    <nav>
+        <div id="select-container">
+            <select name="characters" id="select">
+                <option class="option" value="all">All the characters</option>
+                <template id="option-template">
+                    <option class="option"></option>
+                </template>
+            </select>
+        </div>
+
+    </nav>
     <main>
         <div class="main-card">
-            <template id="card-template">
-                <div class="text-container">
-                    <h3 class="name"></h3>
-                    <p class="specie"></p>
-                    <p class="gender"></p>
-                </div>
-                <div class="img-container"><img src="" alt="" class="img"></div>
-            </template>
+                <template id="card-template">
+                    <div class="card-template">
+                        <div class="text-container">
+                            <h3 class="name"></h3>
+                            <p class="specie"></p>
+                            <p class="gender"></p>
+                        </div>
+                        <div class="img-container"><img src="" alt="" class="img"></div>
+                    </div>
+                </template>
         </div>
     </main>
     <footer></footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
